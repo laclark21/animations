@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  position:relative;
+  animation-name: strawberry;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
+#div1{animation-timing-function: ease-in; width:80px; height:80px;}
+#div2{animation-timing-function: ease-out;width:20px;height:20px}
+@keyframes strawberry {
+  0%{background-color:  pink;left:0px; top:0px;}
+  25%{background-color: blue; width:30px; height:30px;left:40px; top:0px;}
+  50%{background-color: Grey;left:40px; top:20px;}
+  75%{background-color:lavendar;left:200px; top:80px;}
+  85%{background-color:lavendar; width:30px; height:30px;left:500px; top:0px;}
+  100%{background-color:lavendar;width:80px; height:80px;left:1100px; top:850px;}
+}
+</style>
+</head>
+<body>
+
+
+
+<div id=div1></div>
+<div id=div2></div>
+
+
+
+</body>
+</html>
